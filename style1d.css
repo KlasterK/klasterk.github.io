@@ -1,0 +1,42 @@
+@import url('style1.css');
+
+body {
+    background-color: #111111;
+    font-family: Consolas, monospace, sans-serif;
+    color: darkolivegreen;
+}
+
+header {
+    background-color: #003300;
+}
+
+header p {
+    color: #009900;
+}
+
+main {
+    background-color: #171717;
+    color: #cccccc;
+}
+
+a {
+    color: green;
+}
+
+#content-plan a {
+    color: darkolivegreen;
+}
+
+#to-top:hover {
+    background-color: #ffffff33;
+}
+
+select {
+    background-color: #171717;
+    border-color: gray;
+    color: #cccccc;
+}
+
+select:focus-within {
+    border-color: brown;
+}
