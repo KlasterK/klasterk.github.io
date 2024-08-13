@@ -48,7 +48,7 @@ function switchDarkTheme(sw)
     if(sw) {
         let link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = 'style1d.css';
+        link.href = '/style1d.css';
         link.id = 'dark-theme-link'
         document.head.append(link);
     } else {

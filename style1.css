@@ -1,10 +1,10 @@
 @font-face {
     font-family: Header;
     src: local('Open Sans Condensed'),
-         url('fonts/header/OpenSans-SemiBold.woff2') format('woff2'),
-         url('fonts/header/OpenSans-SemiBold.woff')  format('woff'),
-         url('fonts/header/OpenSans-SemiBold.otf')   format('otf'),
-         url('fonts/header/OpenSans-SemiBold.svg')   format('svg'),
+         url('/fonts/header/OpenSans-SemiBold.woff2') format('woff2'),
+         url('/fonts/header/OpenSans-SemiBold.woff')  format('woff'),
+         url('/fonts/header/OpenSans-SemiBold.otf')   format('otf'),
+         url('/fonts/header/OpenSans-SemiBold.svg')   format('svg'),
 }
 
 body {
@@ -35,8 +35,14 @@ header img {
 main {
     max-width: 1000px;
     background-color: white;
-    margin: 10px auto;
+    margin: auto;
     padding: 1em;
+    overflow-x: hidden;
+    line-height: 1.5em;
+}
+
+main h1 {
+    font-size: 1.8em;
 }
 
 #pages-list {
@@ -48,7 +54,7 @@ main {
 #custom-shit {
     max-width: 1000px;
     margin: auto;
-    padding-left: 1em;
+    padding: 0 1em 1em;
 }
 
 a {
@@ -64,6 +70,10 @@ a:hover {
     position: absolute;
     margin: 2em;
     display: none;
+}
+
+#content-plan h1 {
+    font-size: 1.5em;
 }
 
 #content-plan a {
@@ -82,7 +92,7 @@ a:hover {
 
     #custom-shit {
         position: absolute;
-        right: 1em;
+        right: 0;
     }
 }
 
@@ -106,9 +116,9 @@ footer {
 
 #to-top img {
     display: none;
-    margin-top: calc(50vh - 50px);
-    margin-left: calc(50% - 50px);
-    width: 50%;
+    margin-top: calc(50vh - 18.75%);
+    margin-left: 31.25%;
+    width: 37.5%;
 }
 
 #to-top:hover {

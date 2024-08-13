@@ -1,4 +1,4 @@
-@import url('style1.css');
+@import url('/style1.css');
 
 body {
     background-color: #111111;
@@ -35,8 +35,4 @@ select {
     background-color: #171717;
     border-color: gray;
     color: #cccccc;
-}
-
-select:focus-within {
-    border-color: brown;
 }
