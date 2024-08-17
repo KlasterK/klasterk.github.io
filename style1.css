@@ -1,6 +1,6 @@
 @font-face {
     font-family: Header;
-    src: local('Open Sans Condensed'),
+    src: local('Open Sans SemiBold'),
          url('/fonts/header/OpenSans-SemiBold.woff2') format('woff2'),
          url('/fonts/header/OpenSans-SemiBold.woff')  format('woff'),
          url('/fonts/header/OpenSans-SemiBold.otf')   format('otf'),
@@ -127,4 +127,8 @@ footer {
 
 #to-top:hover img {
     display: initial;
+}
+
+figure {
+    display: inline-block;
 }
