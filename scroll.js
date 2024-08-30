@@ -24,7 +24,7 @@ else if(theme == 'dark') {
 
 document.addEventListener('scroll', function(event)
 {
-    toTop.hidden = document.scrollingElement.scrollTop < height;
+    toTop.toggleAttribute('hidden', document.scrollingElement.scrollTop < height);
 });
 
 function onChangeInSelTheme(event)
