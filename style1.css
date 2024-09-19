@@ -42,7 +42,8 @@ main {
 }
 
 main h1 {
-    font-size: 1.8em;
+    font-size: 2em;
+    text-decoration: underline #00cc00;
 }
 
 #pages-list {
