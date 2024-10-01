@@ -8,6 +8,18 @@
 
         <link href="/style1.css" rel="stylesheet">
         <script src="/scroll.js"></script>
+
+        <style>
+            dl {
+                margin: 0;
+            }
+
+            dl a {
+                color: inherit;
+                display: block;
+                text-decoration: dotted underline 1px;
+            }
+        </style>
     </head>
 
     <body>
@@ -35,23 +47,12 @@
         </nav>
 
         <div id="custom-shit">
-<<<<<<< HEAD
             <label for="select-theme">Выбрать тему</label>
             <select id="select-theme">
                 <option value="ui-default">Как в браузере/системе</option>
                 <option value="light">Светлая</option>
                 <option value="dark">Тёмная</option>
             </select>
-=======
-            <form action="">
-                <label>Выбрать тему</label>
-                <select id="select-theme">
-                    <option value="ui-default">Как в браузере/системе</option>
-                    <option value="light">Светлая</option>
-                    <option value="dark">Тёмная</option>
-                </select>
-            </form>
->>>>>>> 422a044b48ea57313462825e7edae4bb92cee886
         </div>
 
         <main>
@@ -84,7 +85,33 @@
                 <h2 id="h2-index">Индекс</h2>
                 <p>Раз уж сайт технически называется <code>index.html</code>, то пускай здесь будут ссылки на все страницы сайта. 
                    Всё равно бы все ссылки не вместились бы в верхнюю панельку сайта.</p>
-                <p>Ну... Пока что тут есть только эта страница! :&rangle; (или не только?)</p>
+                <dl>
+                    <dt>Собственный контент</dt>
+                    <dd><dl>
+                        <dt>Minecraft</dt>
+                        <dd><dl>
+                            <dt>KlasterKraft</dt>
+                            <dd><dl>
+                                <a href="/own-content/minecraft/klasterkraft/give-generator.html">Генератор команды /give</a>
+                            </dl></dd>
+                        </dl></dd>
+                        <dt>Гайды по программированию</dt>
+                        <dd><dl>
+                            <dt>HTML, CSS</dt>
+                            <dd><dl>
+                                <a href="/own-content/programming-guides/html-css/1.html">Часть 1<img src="dload.svg" height="1em"></a>
+                            </dl></dd>
+                        </dl></dd>
+                        <dt>Без категории</dt>
+                        <dd><dl>
+                            <a href="/own-content/uncategorized/dailyray-text.html">Текст песни про пельмени</a>
+                        </dl></dd>
+                    </dl></dd>
+                    <dt>Пользовательский контент</dt>
+                    <dd><dl>
+                        <a href="/user-content/template.html">Шаблон</a>
+                    </dl></dd>
+                </dl>
 
                 <h2 id="h2-contributing">Внесение вклада в сайт (и не только)</h2>
                 <p>Вы можете создавать свои страницы для сайта. Раз уж сайт хостится на GitHub Pages, то вы можете
