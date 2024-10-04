@@ -43,7 +43,11 @@ main {
 
 main h1 {
     font-size: 2em;
-    text-decoration: underline #00cc00;
+    border-bottom: 2px solid #66cc66;
+    margin-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0;
+    line-height: 1em;
 }
 
 #pages-list {

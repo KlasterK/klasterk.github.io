@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Визитка KlasterK. Визитная карточка. Сайт KlasterK. На чистом HTML и CSS. Главная страница лучшего сайта (моего). Мой YouTube канал. Мой Discord сервер. Мой Minecraft сервер KlasterKraft. Discord сервер для KlasterKraft.">
+        <title>Визитная карточка | Сайт KlasterK</title>
+
+        <link type="image/png" href="/favicon.ico" rel="icon">
+        <link type="image/png" href="/favicon.ico" rel="shortcut icon">
+
+        <style>
+            html, body {
+                min-height: 100%;
+                background-image: linear-gradient(to bottom right, #99ffcc, #ccff99);
+            }
+
+            main {
+                background-color: white;
+                max-width: 800px;
+                margin: 1em auto;
+                padding: 1em;
+                box-shadow: 0 0 1em black;
+            }
+
+            .his-majesty-klasterk {
+                margin: auto;
+                max-width: 800px;
+            }
+            
+            .his-majesty-klasterk h1 {
+                text-align: center;
+                font-size: 2em;
+                margin: 0.2em 0;
+            }
+
+            .his-majesty-klasterk img {
+                display: block;
+                margin: auto;
+            }
+
+            .buttons a {
+                display: block;
+                margin-bottom: 1em;
+                padding: 10px;
+                border-radius: 20px;
+
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                font-family: sans-serif;
+
+                box-shadow: 0.2em 0.2em 0.4em #00000066;
+            }
+
+            .my-site {
+                background-color: #00cc00;
+            }
+
+            .youtube-channel {
+                background-color: red;
+            }
+
+            .discord-server {
+                background-color: #5665f2;
+            }
+
+            .klasterkraft {
+                background-color: chocolate;
+                background-image: url('/files/dirt64.png');
+                text-shadow: 0.05em 0.05em black;
+            }
+
+            .kk-discord {
+                background-color: lightsteelblue;
+                background-image: url('/files/clay64.png');
+            }
+
+            .github {
+                background-color: #24292f;
+            }
+
+            details {
+                color: white;
+                font-family: sans-serif;
+            }
+
+            details summary {
+                user-select: none;
+                cursor: pointer;
+                padding: 0.5em;
+                border-radius: 0.5em;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                background-color: #00cc66;
+            }
+
+            details .info {
+                color: black;
+                border-color: #00cc66;
+                background-color: white;
+                padding: 0.5em;
+                border-radius: 0.5em;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-width: 5px;
+                border-style: solid;
+                border-top-width: 0;
+                padding: 1px 1em;
+            }
+        </style>
+
+        <script>
+            function klasterkraft() {
+                navigator.clipboard.writeText('klasterkraft.aternos.me:56836');
+                alert('Адрес: klasterk.github.io:56836\nВерсия: любая от 1.7.10');
+            };
+        </script>
+    </head>
+
+    <body>
+        <main>
+            <article>
+                <div class="his-majesty-klasterk"> <!-- зачем я назвал этот div так? зачем вы это читаете? -->
+                    <img src="/tess.png" width="180" height="180" alt="Мой логотип (тессеракт)">
+                    <h1>KlasterK</h1>
+                </div>
+
+                <p>
+                    Привет. Многие бло<strong>ғ</strong>еры делают себе визитки с социальными сетями. Но они для этого используют сторонние
+                    сервисы и WYSIWYG-редакторы. Я же сделал всё на чистом HTML и CSS, на собственном сайте (почти, у меня нет денег на домен
+                    и хостинг). Но здесь нет анимаций и всяких фентифлюшек.
+                </p>
+
+                <div class="buttons">
+                    <a href="/index.html" class="my-site">Главная страница лучшего сайта (моего)</a>
+                    <a href="https://youtube.com/@klasterk" class="youtube-channel">Мой YouTube канал</a>
+                    <a href="https://discord.gg/crVSKxRRdh" class="discord-server">Мой Discord сервер</a>
+                    <a href="javascript:klasterkraft();" class="klasterkraft">Мой Minecraft сервер — KlasterKraft
+                        <script>document.write('(копирует и выводит IP адрес)');</script>
+                        <noscript>(у вас нет JavaScript, поэтому ищите адрес внизу страницы)</noscript>
+                    </a>
+                    <a href="https://discord.gg/ABXCeNUdAV" class="kk-discord">Discord сервер для KlasterKraft</a>
+                    <a href="https://github.com/KlasterK" class="github">Мой профиль в GitHub</a>
+                </div>
+
+                <details>
+                    <summary>Дополнительная информация о Minecraft сервере</summary>
+                    <div class="info">
+                        <p>IP адрес: <code>klasterkraft.aternos.me:56836</code></p>
+                        <p>Версия: любая от 1.7.10</p>
+                        <p>Версия ядра: Paper 1.20.2</p>
+                    </div>
+                </details>
+            </article>
+        </main>
+    </body>
+</html>
