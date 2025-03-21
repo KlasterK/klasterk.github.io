@@ -32,6 +32,10 @@ header img {
     display: none;
 }
 
+.no-js-warning {
+    color: gray;
+}
+
 main {
     max-width: 1000px;
     background-color: white;
