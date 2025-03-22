@@ -6,11 +6,11 @@ body {
     color: darkolivegreen;
 }
 
-header {
+#header {
     background-color: #003300;
 }
 
-header p {
+#header p {
     color: #009900;
 }
 
@@ -27,7 +27,7 @@ a {
     color: green;
 }
 
-#content-plan a {
+#table-of-contents a {
     color: darkolivegreen;
 }
 

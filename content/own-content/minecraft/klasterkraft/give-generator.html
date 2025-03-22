@@ -4,38 +4,23 @@
         <!--K{head}K-->
 
         <meta name="robots" content="noindex">
-        <title>Главная | Сайт KlasterK</title>
+        <title>Генератор командной строки к /give | Сайт KlasterK</title>
 
-        <script>
-            let itemID, ench, text, button;
-            window.addEventListener('load', event => {
-                itemID=document.getElementById('item-id')
-                ench=document.getElementById('ench')
-                text=document.getElementById('text')
-                button=document.getElementById('button')
+        <style>
+            label {
+                display: block;
+                margin-bottom: 0.2em;
+            }
 
-                button.addEventListener('click', event =>{
-                    itemID=document.getElementById('item-id')
-                    ench=document.getElementById('ench')
-                    text=document.getElementById('text')
-                    navigator.clipboard.writeText(`/give @s ${itemID.value}{Enchantments:[${ench.value}],Name:'{"text":"${text.value}","italic":false}'}`);
-                })
-            });
-        </script>
+            input {
+                display: block;
+                margin-bottom: 0.5em;
+            }
+        </style>
     </head>
 
     <body>
         <!--K{header}K-->
-
-        <nav id="content-plan">
-            <h1>Содержание страницы</h1>
-            <ol>
-                <li><a href="#h2-about-site">О сайте</a></li>
-                <li><a href="#h2-about-me">О себе</a></li>
-                <li><a href="#h2-index">Индекс</a></li>
-                <li><a href="#h2-contributing">Внесение вклада в сайт</a></li>
-            </ol>
-        </nav>
         
         <!--K{header-expansion}K-->
 
@@ -45,28 +30,37 @@
             <article>
                 <h1>Генератор команды /give</h1>
                 <form action="">
-                    <label id="item-id" type="text">ID предмета</label>
-                    <input pattern="ID предмета" type="text">
-                    <br>
+                    <label for="item-id" type="text">ID предмета</label>
+                    <input id="item-id" placeholder="ID предмета" type="text">
 
-                    <label id="ench" type="text">зачарования</label>
-                    <input pattern="ID зачарования" type="text">
-                    <br>
+                    <label for="ench" type="text">Зачарования</label>
+                    <input id="ench" placeholder="ID зачарования" type="text">
 
-                    <label id="text" type="text">Текст</label>
-                    <input pattern="Текст" type="text">
-                    <br>
+                    <label for="text" type="text">Текст</label>
+                    <input id="text" placeholder="Текст" type="text">
 
-                    <button id="button">В буфер обмена</button>
+                    <button onclick="generateCommandLine();">Генерировать</button>
                 </form>
             </article>
         </main>
 
         <footer>
             <p>Дата создания: 30 июля 2024</p>
-            <p>Дата последнего изменения: 14 августа 2024</p>
+            <p>Дата последнего изменения: 22 марта 2025</p>
             
             <!--K{footer}K-->
         </footer>
     </body>
+
+    <script type="text/javascript">
+        function generateCommandLine() {
+            const itemID = document.querySelector('#item-id'),
+                  ench   = document.querySelector('#ench'),
+                  text   = document.querySelector('#text');
+
+            const s = `/give @s ${itemID.value}{Enchantments:[${ench.value}],Name:'{"text":"${text.value}","italic":false}'}`;
+            navigator.clipboard.writeText(s);
+            alert(s);
+        }
+    </script>
 </html>

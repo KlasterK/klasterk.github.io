@@ -2,6 +2,7 @@ import argparse
 import pathlib
 import re
 import functools
+import configparser
 
 def scan_templates(
     dir: pathlib.Path,
@@ -65,6 +66,7 @@ def main():
                         help='A directory to look up template files')
     parser.add_argument('content', help='Root directory')
     parser.add_argument('output', help='A directory to put a result')
+    parser.add_argument('-links', help='Config file with files to duplicate')
     ns = parser.parse_args()
 
     templates_path = pathlib.Path(ns.templates)
@@ -73,7 +75,27 @@ def main():
     content_path = pathlib.Path(ns.content)
     content = scan_content(content_path, content_path)
 
-    replace_substitutions(templates, content, pathlib.Path(ns.output))
+    output_path = pathlib.Path(ns.output)
+    replace_substitutions(templates, content, output_path)
+
+    if hasattr(ns, 'links'):
+        with open(ns.links, 'r') as file:
+            lines = file.readlines()
+
+        files = {}
+
+        for line in lines:
+            match = re.search(r'^\s*([^=]+)\s*=\s*(.+)\s*$', line)
+            
+            if match:
+                files[match[1]] = match[2]
+        
+        for dest, src in files.items():
+            ipath = output_path / src
+            opath = output_path / dest
+
+            opath.parent.mkdir(parents=True, exist_ok=True)
+            opath.write_bytes(ipath.read_bytes())
 
 if __name__ == '__main__':
     main()

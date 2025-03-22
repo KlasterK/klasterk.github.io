@@ -1,8 +1,8 @@
 <a id="to-top" href="#" hidden>
-    <img src="/2top.svg" alt="Прокрутить вверх">
+    <img src="/images/2top.svg" alt="Прокрутить вверх">
 </a>
 
-<header>
-    <img src="/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
+<header id="header">
+    <img src="/images/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
     <p>Сайт KlasterK</p>
 </header>

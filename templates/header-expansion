@@ -1,8 +1,10 @@
-<nav id="pages-list">
-    <a href="/index.html">Главная</a>
+<nav id="quick-links">
+    <a href="/">Главная</a>
+    <a href="/own-content/about/sitemap">Карта сайта</a>
+    <a href="/own-content/about/card">Визитная карточка</a>
 </nav>
 
-<div id="custom-shit">
+<div id="preferences">
     <label for="select-theme">Выбрать тему</label>
     <select id="select-theme">
         <option value="ui-default">Как в браузере/системе</option>
