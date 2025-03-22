@@ -2,164 +2,112 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Главная страница официального сайта KlasterK. Информация о сайте, о себе, внесении вклада в сайт, индекс.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link type="image/png" href="/favicon.ico" rel="icon">
+<link type="image/png" href="/favicon.ico" rel="shortcut icon">
+
+<link href="/style1.css" rel="stylesheet">
+<script src="/scroll.js"></script>
+
         <title>Главная | Сайт KlasterK</title>
+        <meta name="description" content="Главная страница официального сайта KlasterK. Информация о сайте, о себе, внесении вклада в сайт, индекс.">
 
-        <link type="image/png" href="/favicon.ico" rel="icon">
-        <link type="image/png" href="/favicon.ico" rel="shortcut icon">
 
-        <link href="/style1.css" rel="stylesheet">
-        <script src="/scroll.js"></script>
-
-        <style>
-            dl {
-                margin: 0;
-            }
-
-            dl a {
-                color: inherit;
-                display: block;
-                text-decoration: dotted underline 1px;
-            }
-        </style>
     </head>
 
     <body>
         <a id="to-top" href="#" hidden>
-            <img src="/2top.svg" alt="Прокрутить вверх">
-        </a>
+    <img src="/images/2top.svg" alt="Прокрутить вверх">
+</a>
 
-        <header>
-            <img src="/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
-            <p>Сайт KlasterK</p>
-        </header>
+<header id="header">
+    <img src="/images/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
+    <p>Сайт KlasterK</p>
+</header>
+        <nav id="quick-links">
+    <a href="/">Главная</a>
+    <a href="/own-content/about/sitemap">Карта сайта</a>
+    <a href="/own-content/about/card">Визитная карточка</a>
+</nav>
 
-        <nav id="content-plan">
-            <h1>Содержание страницы</h1>
-            <ol>
-                <li><a href="#h2-about-site">О сайте</a></li>
-                <li><a href="#h2-about-me">О себе</a></li>
-                <li><a href="#h2-index">Индекс</a></li>
-                <li><a href="#h2-contributing">Внесение вклада в сайт</a></li>
-            </ol>
-        </nav>
-        
-        <nav id="pages-list">
-            <a href="/index.html">Главная</a>
-        </nav>
-
-        <div id="custom-shit">
-            <label for="select-theme">Выбрать тему</label>
-            <select id="select-theme">
-                <option value="ui-default">Как в браузере/системе</option>
-                <option value="light">Светлая</option>
-                <option value="dark">Тёмная</option>
-            </select>
-        </div>
+<div id="preferences">
+    <label for="select-theme">Выбрать тему</label>
+    <select id="select-theme">
+        <option value="ui-default">Как в браузере/системе</option>
+        <option value="light">Светлая</option>
+        <option value="dark">Тёмная</option>
+    </select>
+</div>
 
         <main>
-            <noscript><p style="color: gray;">У вас выключен JavaScript, сайт может работать неправильно.</p></noscript>
+            <noscript><div class="no-js-warning">У вас выключен JavaScript, сайт может работать неправильно.</div></noscript>
+
             <article>
                 <h1>Главная страница</h1>
-                <p>Привет! Это мой сайт, мой первый опыт.</p>
-                
-                <h2 id="h2-about-site">О сайте</h2>
-                <p>Я во время бездействия на своём YouTube канале вдруг захотел сделать себе сайт.</p>
-                <p>Сначала я взял Ucoz и слепил кусок говна. Но потом подумал: <i>&ldquo;А может кусок говна сделать самостоятельно?
-                   Без никаких готовых стилей&rdquo;</i>. И сделал. И мне понравилось. По-моему даже не кусок говна, а нормальный сайт.</p>
-                <p>Кстати, я слепил тёмную тему. А также возможность по нажатию промотать вверх (если у вас большой экран и/или маленький масштаб).</p>
+                <p>
+                    Привет! Это мой сайт, мой первый опыт.
+                </p>
                 
                 <h2 id="h2-about-me">О себе</h2>
-                <p>Мне 13 лет, мой день рождения — 16 августа. Немного больше года назад я создал
-                   <a target="_blank" href="https://youtube.com/@klasterk">YouTube канал</a>. Затем я создал к нему
-                   <a target="_blank" href="https://discord.gg/crVSKxRRdh">Discord сервер</a>. Сейчас на канале 120 подписчиков, я ничего не снимаю.</p>
-                <p>Я учусь программировать. Пробовал делать гейммоды для SA-MP (Pawn), скрипты для GTA Connected (JavaScript),
-                   разрабатывал всякие велосипеды и калькуляторы на Python, пробовал писать на C++. Учусь пользоваться Git.
-                   Вот создал сайт. Умею настраивать сервера.</p>
-                <p>Когда я постримил второй раз, мне пришла идея создать сервер в Minecraft чтобы играть с подписчиками на стриме.
-                   И я сделал. На Aternos. Там есть кое-какие плагины и несколько режимов, например выживание (в том числе с подписчиками),
-                   креатив (с приватами), несколько карт пряток и сплиф. Там их ещё больше. IP адрес: <code>klasterkraft.aternos.me</code></p>
-                <p>Так как это сервер на Aternos, его нужно самому включать чтобы поиграть. Я сделал Minecraft серверу
-                   <a target="_blank" href="https://discord.gg/ABXCeNUdAV">Discord сервер</a>. Там можно получить доступ на запуск
-                   (в вашем аккаунте Aternos появится мой сервер с возможностью только запускать), смотреть чат Minecraft сервера,
-                   делиться скриншотами сервера, ну и просто общаться.</p>
-
-                <h2 id="h2-index">Индекс</h2>
-                <p>Раз уж сайт технически называется <code>index.html</code>, то пускай здесь будут ссылки на все страницы сайта. 
-                   Всё равно бы все ссылки не вместились бы в верхнюю панельку сайта.</p>
-                <dl>
-                    <dt>Собственный контент</dt>
-                    <dd><dl>
-                        <dt>Minecraft</dt>
-                        <dd><dl>
-                            <dt>KlasterKraft</dt>
-                            <dd><dl>
-                                <a href="/own-content/minecraft/klasterkraft/give-generator.html">Генератор команды /give</a>
-                            </dl></dd>
-                        </dl></dd>
-                        <!-- <dt>Гайды по программированию</dt>
-                        <dd><dl>
-                            <dt>HTML, CSS</dt>
-                            <dd><dl>
-                                <a href="/own-content/programming-guides/html-css/1.html">Часть 1</a>
-                            </dl></dd>
-                        </dl></dd> -->
-                        <dt>Проекты</dt>
-                        <dd><dl>
-                            <a href="/own-content/projects/falling-text.html">Физическая песочница &laquo;Падающий текст&raquo;</a>
-                            <a href="/own-content/projects/falling-pixels.html">Физическая песочница &laquo;Падающие пиксели&raquo;</a>
-                        </dl></dd>
-                        <dt>Без категории</dt>
-                        <dd><dl>
-                            <a href="/own-content/uncategorized/dailyray-text.html">Текст песни про пельмени</a>
-                            <a href="/own-content/uncategorized/visitka.html">Визитная карточка</a>
-                        </dl></dd>
-                    </dl></dd>
-                    <dt>Пользовательский контент</dt>
-                    <dd><dl>
-                        <a href="/user-content/template.html">Шаблон</a>
-                    </dl></dd>
-                </dl>
-
-                <h2 id="h2-contributing">Внесение вклада в сайт (и не только)</h2>
-                <p>Вы можете создавать свои страницы для сайта. Раз уж сайт хостится на GitHub Pages, то вы можете
-                   сделать вклад через &laquo;Issues&raquo; по <a target="_blank" href="/user-content/template.html">шаблону</a>.
-                   Если вы не знаете, как это делать, то вот вам гайд:</p>
-                <ol start="0">
-                    <li>Зарегистрируйте аккаунт GitHub (если нет)</li>
-                    <li>Откройте репозиторий сайта и затем вкладку &laquo;Issues&raquo;
-                        (или перейдите <a target="_blank" href="https://github.com/KlasterK/klasterk.github.io/issues">сюда</a>).</li>
-                    <li>Нажмите на кнопку &laquo;New issue&raquo;.</li>
-                    <li>Напишите что-нибудь в полях &laquo;Title&raquo; и &laquo;Description&raquo;.</li>
-                    <li>Добавьте готовую страницу через скрепку (Attach files).</li>
-                    <li>Нажмите на &laquo;Labels&raquo; справа от формы и выберите тег &laquo;page (страница)&raquo;.</li>
-                    <li>Нажмите на кнопку &laquo;Submit new issue&raquo;.</li>
-                </ol>
-                <p>Постарайтесь сделать всё сразу хорошо, чтобы уменьшить мне потом количество работы.</p>
-                <p>Вы также можете оставить отзыв, дать совет, сообщить об ошибке или что-то ещё.
-                   Просто поставьте другой тег!</p>
-
-                <p>Не знаю, что ещё написать, так что конец.</p>
+                <p>
+                    Мне 13 лет, мой день рождения — 16 августа. 21 апреля 2023 я создал
+                    <a target="_blank" href="https://youtube.com/@klasterk">YouTube канал</a>. Затем я создал к нему
+                    <a target="_blank" href="https://discord.gg/crVSKxRRdh">Discord сервер</a>. Сейчас на канале 134 подписчиков.</p>
+                    Снимаю видео по Minecraft: гайды на постройки и команды и единичные видео на прочие темы. Среди них прохождение
+                    карты, гайд на создание сервера и даже коммунизм в Minecraft (хоть во время записи видео в нём плохо разбирался).
+                <p>
+                    Я программирую. Программирую всякую рандомную фигню, но стараюсь всё же определёнными вещами заниматься, чтобы
+                    не тратить усилия впустую.
+                </p>
+                <p>
+                    Когда я постримил второй раз, мне пришла идея создать сервер в Minecraft чтобы играть с подписчиками на стриме.
+                    И я сделал. На Aternos. Там есть кое-какие плагины и несколько режимов, например выживание (в том числе с подписчиками),
+                    креатив (с приватами), несколько карт пряток и сплиф. Там их ещё больше. Адрес: <code>klasterkraft.aternos.me:56836</code>
+                </p>
+                <p>
+                    Так как это сервер на Aternos, его нужно самому включать чтобы поиграть. Я сделал Minecraft серверу
+                    <a target="_blank" href="https://discord.gg/ABXCeNUdAV">Discord сервер</a>. Там можно получить доступ на запуск
+                    (в вашем аккаунте Aternos появится мой сервер с возможностью только запускать), смотреть чат Minecraft сервера,
+                    делиться скриншотами сервера, ну и просто общаться.
+                </p>
+                
+                   
+                <h2 id="h2-about-site">О сайте</h2>
+                <p>Я во время бездействия на своём YouTube канале вдруг захотел сделать себе сайт.</p>
+                <p>
+                    Сначала я взял Ucoz и сделал фигню, потом ещё случайно сломав стили.
+                    Но потом подумал: <i>&ldquo;А может сайт сделать самописно?
+                    Без никаких готовых стилей&rdquo;</i>.
+                    И сделал. И мне понравилось. По-моему даже нормальный сайт, хоть и никому не нужный. :)
+                </p>
+                <p>
+                    Кстати, я добавил тёмную тему.
+                    А также возможность по нажатию промотать вверх (если у вас большой экран и/или маленький масштаб).
+                    Ещё на большинстве страниц есть содержание, но оно отображается только если между левыми краями
+                    контента и вьюпорта (зона просмотра) достаточно места.
+                    Когда-нибудь сделаю доступным его открытие пользователям браузеров без функции масштабирования.
+                </p>
             </article>
         </main>
 
         <footer>
             <p>Дата создания: 30 июля 2024</p>
-            <p>Дата последнего изменения: 17 августа 2024</p>
-            <p>2024 &copy; KlasterK</p>
-            <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
-            
-            <!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
-            target="_blank"><img id="licnt0E12" width="88" height="31" style="border:0" 
-            title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
-            alt=""/></a><script>(function(d,s){d.getElementById("licnt0E12").src=
-            "https://counter.yadro.ru/hit?t11.14;r"+escape(d.referrer)+
-            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
-            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
-            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
-            (document,screen)</script><!--/LiveInternet-->
+            <p>Дата последнего изменения: 22 марта 2025</p>
+
+            <p>2025 &copy; KlasterK</p>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt0E12" width="88" height="31" style="border:0" 
+title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/></a><script>(function(d,s){d.getElementById("licnt0E12").src=
+"https://counter.yadro.ru/hit?t11.14;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
         </footer>
     </body>
 </html>

@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8"> <!-- Если вы используете другую кодировку, то укажите её в этом теге -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link type="image/png" href="/favicon.ico" rel="icon">
+<link type="image/png" href="/favicon.ico" rel="shortcut icon">
+
+<link href="/style1.css" rel="stylesheet">
+<script src="/scroll.js"></script>
+        
         <meta name="description" content="Курс по HTML и CSS официального сайта KlasterK. Часть 1. Введение.
                                           В этом уроке читатель узнает о том, как создаются сайты и как они работают.
                                           Узнает разницу между семантикой и внешним видом, что такое front-end и back-end.">
         <title>Курс по HTML и CSS. Часть 1. Введение | Сайт KlasterK</title>
-
-        <link type="image/png" href="/favicon.ico" rel="icon">
-        <link type="image/png" href="/favicon.ico" rel="shortcut icon">
-
-        <link href="/style1.css" rel="stylesheet">
-        <script src="/scroll.js"></script>
     </head>
 
     <body>
         <a id="to-top" href="#" hidden>
-            <img src="/2top.svg" alt="Прокрутить вверх">
-        </a>
+    <img src="/images/2top.svg" alt="Прокрутить вверх">
+</a>
 
-        <header>
-            <img src="/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
-            <p>Сайт KlasterK</p>
-        </header>
+<header id="header">
+    <img src="/images/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
+    <p>Сайт KlasterK</p>
+</header>
+        <nav id="quick-links">
+    <a href="/">Главная</a>
+    <a href="/own-content/about/sitemap">Карта сайта</a>
+    <a href="/own-content/about/card">Визитная карточка</a>
+</nav>
 
-        <nav id="content-plan">
-            <h1>Содержание страницы</h1>
-            <ol>
-                <li>Здесь должно быть содержание страницы!</li>
-            </ol>
-        </nav>
-        
-        <nav id="pages-list">
-            <a href="/index.html">Главная</a>
-        </nav>
-
-        <div id="custom-shit">
-            <label for="select-theme">Выбрать тему</label>
-            <select id="select-theme">
-                <option value="ui-default">Как в браузере/системе</option>
-                <option value="light">Светлая</option>
-                <option value="dark">Тёмная</option>
-            </select>
-        </div>
+<div id="preferences">
+    <label for="select-theme">Выбрать тему</label>
+    <select id="select-theme">
+        <option value="ui-default">Как в браузере/системе</option>
+        <option value="light">Светлая</option>
+        <option value="dark">Тёмная</option>
+    </select>
+</div>
 
         <main>
-            <noscript><p style="color: gray;">У вас выключен JavaScript, сайт может работать неправильно.</p></noscript>
+            <noscript><div class="no-js-warning">У вас выключен JavaScript, сайт может работать неправильно.</div></noscript>
+
             <article>
                 <h1>Урок 1. Введение</h1>
                 <p>Привет, читатели! В этому уроке вы получите базовое представление о том, как устроен Интернет.</p>
@@ -56,17 +52,17 @@
                 <p>Первый, HTML, расшифровывается как Hyper Text Markup Language,
                    что переводится как &laquo;язык гипертекстовой разметки&raquo;. А гипертекст — это текст, который ссылается на
                    другие документы.</p>
-                <p>Второй, CSS, расшифровывается как Cascading Stylesheets, а перевод — &laquo;каскадные таблицы стилей&raquo;.
+                <p>Второй, CSS, расшифровывается как Cascading StyleSheets, а перевод — &laquo;каскадные таблицы стилей&raquo;.
                    Каскадные, потому что один элемент HTML может иметь другие элементы, а также различные состояния (псевдоклассы), и это всё
                    сливается по &ldquo;уступам&rdquo; в общий вид.</p>
-                <p>Эти оба языка называют описательными, &ldquo;не настоящими&rdquo;, потому что через них можно лишь описывать данные, не оперировать ими.
+                <p>Эти оба языка называют описательными, некоторые авторы &mdash; &ldquo;не настоящими&rdquo;, потому что через них можно лишь описывать данные, не оперировать ими.
                    А привычные языки программирования называют императивными. Императивным является JavaScript.
                    При помощи него можно динамично управлять документами и стилями, а также взаимодействовать с браузером.</p>
                 <p>Описание данных и их украшение или подготовка к печати называют вёрсткой, то что делают HTML и CSS.
                    А если скомбинировать их с JavaScript, то получится область программирования, называемая front-end.</p>
                 <p>При помощи frontend языков вы можете создать статичный сайт. Это не значит, что вы не сможете полноценно использовать
                    в нём JavaScript. Это значит, что пользователи сайта смогут пользоваться только тем, что автор сайта изначально заложил.
-                   Никаких аккаунтов, чатов, форумов, автоматического создания контента пользователями!</p>
+                   Никаких аккаунтов, чатов, форумов, автоматического создания контента пользователями, и т.&nbsp;п.</p>
                 <p>Чтобы сделать перечисленное и что-угодно ещё, вам понадобится генерация контента сервером. Эта область программирования
                    называется backend. Обычно для этого используют PHP, специально созданный для такого, но можно использовать абсолютно
                    любой императивный язык.</p>
@@ -85,20 +81,37 @@
                 <h2>Галерея</h2>
                 <p>Наведите курсор на картинку, чтобы узнать больше.</p>
                 <figure>
-                    <img src="html5.svg" width="100" height="100" title="Логотип HTML 5, последней версии стандарта">
+                    <img src="/images/html5.svg" width="100" height="100" title="Логотип HTML 5, последней версии стандарта">
                     <figcaption>Логотип HTML</figcaption>
                 </figure>
                 <figure>
-                    <img src="css3.svg" width="100" height="100" title="Логотип CSS 3, последней версии стандарта, хотя есть CSS 4, но он в ранней разработке и его можно не учитывать">
+                    <img src="/images/css3.svg" width="100" height="100" title="Логотип CSS 3, последней версии стандарта, хотя есть CSS 4, но он в ранней разработке и его можно не учитывать">
                     <figcaption>Логотип CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/js.svg" width="100" height="100" title="Неофициальный логотип JavaScript">
+                    <figcaption>Неофициальный логотип JS</figcaption>
                 </figure>
             </article>
         </main>
 
         <footer>
-            <p>Дата создания: 14 2024</p>
-            <p>2024 &copy; KlasterK</p>
-            <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+            <p>Дата создания: 14 августа 2024</p>
+            <p>Дата последнего изменения: 22 марта 2025</p>
+            
+            <p>2025 &copy; KlasterK</p>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt0E12" width="88" height="31" style="border:0" 
+title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/></a><script>(function(d,s){d.getElementById("licnt0E12").src=
+"https://counter.yadro.ru/hit?t11.14;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
         </footer>
     </body>
 </html>

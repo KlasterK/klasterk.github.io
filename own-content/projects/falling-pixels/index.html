@@ -10,20 +10,8 @@
 <link href="/style1.css" rel="stylesheet">
 <script src="/scroll.js"></script>
 
-        <meta name="robots" content="noindex">
-        <title>Генератор командной строки к /give | Сайт KlasterK</title>
-
-        <style>
-            label {
-                display: block;
-                margin-bottom: 0.2em;
-            }
-
-            input {
-                display: block;
-                margin-bottom: 0.5em;
-            }
-        </style>
+        <meta name="description" content="Песочница. Падающий песок. Песочница в консоли. Физическая пеочница симулятор. Лучшая игра. Сайт KlasterK игры онлайн игры для мальчиков игры для девочек консоль терминал Games For Windows">
+        <title>Физическая песочница &laquo;Падающие пиксели&raquo; | Сайт KlasterK</title>
     </head>
 
     <body>
@@ -35,6 +23,14 @@
     <img src="/images/tess.png" alt="Логотип канала (тессеракт)" title="Логотип канала (тессеракт)">
     <p>Сайт KlasterK</p>
 </header>
+
+        <nav id="table-of-contents">
+            <h1>Содержание страницы</h1>
+            <ol>
+                <li><a href="#h2-controls">Управление</a></li>
+                <li><a href="#h2-downloads">Скачать</a></li>
+            </ol>
+        </nav>
         
         <nav id="quick-links">
     <a href="/">Главная</a>
@@ -55,24 +51,25 @@
             <noscript><div class="no-js-warning">У вас выключен JavaScript, сайт может работать неправильно.</div></noscript>
 
             <article>
-                <h1>Генератор команды /give</h1>
-                <form action="">
-                    <label for="item-id" type="text">ID предмета</label>
-                    <input id="item-id" placeholder="ID предмета" type="text">
+                <h1>Физическая песочница &laquo;Падающие пиксели&raquo;</h1>
+                <p>Я не знаю как назвать свою игру, поэтому назвал так.</p>
+                <p>Она похожа на игру &laquo;песочница&raquo; от SmellyMoo для Android.</p>
 
-                    <label for="ench" type="text">Зачарования</label>
-                    <input id="ench" placeholder="ID зачарования" type="text">
+                <h2 id="h2-controls">Управление</h2>
+                <p>Q — песок</p>
+                <p>W — жидкость</p>
+                <p>E — стена</p>
+                <p>R — стереть</p>
+                <p>Return — изменить размер песочницы до размера окна</p>
+                <p>Tab — изменить интервал между тиками</p>
 
-                    <label for="text" type="text">Текст</label>
-                    <input id="text" placeholder="Текст" type="text">
-
-                    <button onclick="generateCommandLine();">Генерировать</button>
-                </form>
+                <h2 id="h2-downloads">Скачать</h2>
+                <p>Windows x86-64: <a href="media.zip">ZIP-архив (3467 кБ)</a></p>
             </article>
         </main>
 
         <footer>
-            <p>Дата создания: 30 июля 2024</p>
+            <p>Дата создания: 13 августа 2024</p>
             <p>Дата последнего изменения: 22 марта 2025</p>
             
             <p>2025 &copy; KlasterK</p>
@@ -90,16 +87,4 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt0E12").src=
 (document,screen)</script><!--/LiveInternet-->
         </footer>
     </body>
-
-    <script type="text/javascript">
-        function generateCommandLine() {
-            const itemID = document.querySelector('#item-id'),
-                  ench   = document.querySelector('#ench'),
-                  text   = document.querySelector('#text');
-
-            const s = `/give @s ${itemID.value}{Enchantments:[${ench.value}],Name:'{"text":"${text.value}","italic":false}'}`;
-            navigator.clipboard.writeText(s);
-            alert(s);
-        }
-    </script>
 </html>
