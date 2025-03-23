@@ -4,7 +4,7 @@ const LS_THEME = 'klasterk-kkghio-theme';
 window.addEventListener('load', function(event)
 {
     toTop    = document.querySelector('#to-top');
-    height   = document.querySelector('#content-plan').getBoundingClientRect();
+    height   = document.querySelector('#table-of-contents').getBoundingClientRect();
     height   = height.y + height.height;
     selTheme = document.querySelector('#select-theme');
 
