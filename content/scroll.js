@@ -1,15 +1,18 @@
 let toTop, height, themeIndex, selTheme;
 const LS_THEME = 'klasterk-kkghio-theme';
 
-window.addEventListener('load', function(event)
-{
+window.addEventListener('load', function(event) {
     toTop    = document.querySelector('#to-top');
-    height   = document.querySelector('#table-of-contents').getBoundingClientRect();
-    height   = height.y + height.height;
     selTheme = document.querySelector('#select-theme');
 
     selTheme.selectedIndex = themeIndex;
     selTheme.addEventListener('change', onChangeInSelTheme);
+
+    const tableOfContents = document.querySelector('#table-of-contents');
+    if(tableOfContents) {
+        const rect = tableOfContents.getBoundingClientRect();
+        height = rect.y + rect.height;
+    }
 });
 
 let theme = localStorage.getItem(LS_THEME);
@@ -22,15 +25,12 @@ else if(theme == 'dark') {
     switchDarkTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
 }
 
-document.addEventListener('scroll', function(event)
-{
+document.addEventListener('scroll', function(event) {
     toTop.toggleAttribute('hidden', document.scrollingElement.scrollTop < height);
 });
 
-function onChangeInSelTheme(event)
-{
-    switch(selTheme.selectedIndex)
-    {
+function onChangeInSelTheme(event) {
+    switch(selTheme.selectedIndex) {
         case 0: localStorage.removeItem(LS_THEME);
                 switchDarkTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
                 break;
@@ -43,8 +43,7 @@ function onChangeInSelTheme(event)
     }
 }
 
-function switchDarkTheme(sw)
-{
+function switchDarkTheme(sw) {
     if(sw) {
         let link = document.createElement('link');
         link.rel = 'stylesheet';

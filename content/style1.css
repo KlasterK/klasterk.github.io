@@ -47,7 +47,7 @@ main {
 
 main h1 {
     font-size: 2em;
-    border-bottom: 2px solid #66cc66;
+    border-bottom: 2px solid #6C6;
     margin-top: 0.2em;
     padding-bottom: 0.2em;
     margin-bottom: 0;
@@ -60,6 +60,10 @@ main h1 {
     padding: 1em;
 }
 
+#quick-links a {
+    margin-right: 1em;
+}
+
 #preferences {
     max-width: 1000px;
     margin: auto;
@@ -68,7 +72,7 @@ main h1 {
 
 a {
     text-decoration: none;
-    color: #00cc00;
+    color: #0C0;
 }
 
 a:hover {
@@ -85,9 +89,9 @@ a:hover {
     font-size: 1.5em;
 }
 
-#content-plan a {
+#table-of-contents a {
     color: black;
-    text-decoration: none;
+    text-decoration: dotted underline 1px;
 }
 
 #table-of-contents a:hover {
@@ -131,7 +135,7 @@ footer {
 }
 
 #to-top:hover {
-    background-color: #00000033;
+    background-color: #0003;
 }
 
 #to-top:hover img {
