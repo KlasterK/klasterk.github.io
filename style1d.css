@@ -1,22 +1,22 @@
 @import url('/style1.css');
 
 body {
-    background-color: #111111;
+    background-color: #111;
     font-family: Consolas, monospace, sans-serif;
     color: darkolivegreen;
 }
 
 #header {
-    background-color: #003300;
+    background-color: #030;
 }
 
 #header p {
-    color: #009900;
+    color: #0A0;
 }
 
 main {
     background-color: #171717;
-    color: #cccccc;
+    color: #CCC;
 }
 
 main h1 {
@@ -32,11 +32,11 @@ a {
 }
 
 #to-top:hover {
-    background-color: #ffffff33;
+    background-color: #FFF3;
 }
 
 select {
     background-color: #171717;
     border-color: gray;
-    color: #cccccc;
+    color: #CCC;
 }
