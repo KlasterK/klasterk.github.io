@@ -1,159 +1,209 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Визитка KlasterK. Визитная карточка. Сайт KlasterK. На чистом HTML и CSS. Главная страница лучшего сайта (моего). Мой YouTube канал. Мой Discord сервер. Мой Minecraft сервер KlasterKraft. Discord сервер для KlasterKraft.">
-        <title>Визитная карточка | Сайт KlasterK</title>
 
-        <link type="image/png" href="/favicon.ico" rel="icon">
-        <link type="image/png" href="/favicon.ico" rel="shortcut icon">
 
-        <style>
-            html, body {
-                min-height: 100%;
-                background-image: linear-gradient(to bottom right, #99ffcc, #ccff99);
-            }
 
-            main {
-                background-color: white;
-                max-width: 800px;
-                margin: 1em auto;
-                padding: 1em;
-                box-shadow: 0 0 1em black;
-                line-height: 1.5em;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Визитка KlasterK. Визитная карточка. Сайт KlasterK. На чистом HTML и CSS. Главная страница лучшего сайта (моего). Мой YouTube канал. Мой Discord сервер. Мой Minecraft сервер KlasterKraft. Discord сервер для KlasterKraft.">
+    <title>Визитка KlasterK</title>
 
-            .his-majesty-klasterk {
-                margin: auto;
-                max-width: 800px;
-            }
-            
-            .his-majesty-klasterk h1 {
-                text-align: center;
-                font-size: 2em;
-                margin: 0.2em 0;
-            }
+    <link type="image/png" href="/favicon.ico" rel="icon">
+    <link type="image/png" href="/favicon.ico" rel="shortcut icon">
 
-            .his-majesty-klasterk img {
-                display: block;
-                margin: auto;
-            }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        html {
+            font-family: 'Inter', sans-serif;
+            background-image: linear-gradient(to bottom right, #ddffee, #eeffdd);
+            height: 100%;
+        }
+        body {
+            background-color: white;
+            margin: 1.5em auto;
+            max-width: 70em;
+            padding: 1em 0.2em 2em;
+            border-radius: 1em;
+            box-shadow: 0 0 4em #00000027;
+        }
+        .main-heading {
+            display: flex;
+            flex-wrap: wrap;  /* Разрешаем перенос */
+            justify-content: center;  /* Центрируем оба элемента как группу */
+            align-items: center;  /* Выравниваем по вертикали */
+            gap: 1em;  /* Отступ между h1 и img */
+            text-align: center;  /* Центрируем текст внутри h1 (на случай переноса) */
+            margin: 0 auto;  /* Авто-отступы по бокам (опционально) */
+            max-width: max-content;  /* Блок не растягивается на всю ширину */
+        }
+        .main-tess {
+            width: 4.2em;
+            height: 4.2em;
+            flex-shrink: 0;
+        }
+        h1 {
+            text-shadow: 0.05em 0.05em 0.04em #696;
+            color: #0f0;
+            margin: 0;
+            text-align: center;
 
-            .buttons a {
-                display: block;
-                margin-bottom: 1em;
-                padding: 10px;
-                border-radius: 20px;
+            font-family: 'Open Sans', sans-serif;
+            margin: auto;
+            width: fit-content;
+            font-size: 3em;
+        }
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            margin: auto;
+            width: fit-content;
+            font-size: 2em;
+        }
+        a {
+            text-decoration: none;
+            color: #00b000;
+        }
+        a:hover, a:active {
+            text-decoration: underline;
+        }
+        .youtube-ctx {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkuNjE1IDMuMTg0Yy0zLjYwNC0uMjQ2LTExLjYzMS0uMjQ1LTE1LjIzIDAtMy44OTcuMjY2LTQuMzU2IDIuNjItNC4zODUgOC44MTYuMDI5IDYuMTg1LjQ4NCA4LjU0OSA0LjM4NSA4LjgxNiAzLjYuMjQ1IDExLjYyNi4yNDYgMTUuMjMgMCAzLjg5Ny0uMjY2IDQuMzU2LTIuNjIgNC4zODUtOC44MTYtLjAyOS02LjE4NS0uNDg0LTguNTQ5LTQuMzg1LTguODE2em0tMTAuNjE1IDEyLjgxNnYtOGw4IDMuOTkzLTggNC4wMDd6Ii8+PC9zdmc+);
+            background-size: 1em 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+        }
+        .twitch-ctx {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMi4xNDkgMGwtMS42MTIgNC4xMTl2MTYuODM2aDUuNzMxdjMuMDQ1aDMuMjI0bDMuMDQ1LTMuMDQ1aDQuNjU3bDYuMjY5LTYuMjY5di0xNC42ODZoLTIxLjMxNHptMTkuMTY0IDEzLjYxMmwtMy41ODIgMy41ODJoLTUuNzMxbC0zLjA0NSAzLjA0NXYtMy4wNDVoLTQuODM2di0xNS4wNDVoMTcuMTk0djExLjQ2M3ptLTMuNTgyLTcuMzQzdjYuMjYyaC0yLjE0OXYtNi4yNjJoMi4xNDl6bS01LjczMSAwdjYuMjYyaC0yLjE0OXYtNi4yNjJoMi4xNDl6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
+            background-size: 1em 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+        }
+        .discord-ctx {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOS41NCAwYzEuMzU2IDAgMi40NiAxLjEwNCAyLjQ2IDIuNDcydjIxLjUyOGwtMi41OC0yLjI4LTEuNDUyLTEuMzQ0LTEuNTM2LTEuNDI4LjYzNiAyLjIyaC0xMy42MDhjLTEuMzU2IDAtMi40Ni0xLjEwNC0yLjQ2LTIuNDcydi0xNi4yMjRjMC0xLjM2OCAxLjEwNC0yLjQ3MiAyLjQ2LTIuNDcyaDE2LjA4em0tNC42MzIgMTUuNjcyYzIuNjUyLS4wODQgMy42NzItMS44MjQgMy42NzItMS44MjQgMC0zLjg2NC0xLjcyOC02Ljk5Ni0xLjcyOC02Ljk5Ni0xLjcyOC0xLjI5Ni0zLjM3Mi0xLjI2LTMuMzcyLTEuMjZsLS4xNjguMTkyYzIuMDQuNjI0IDIuOTg4IDEuNTI0IDIuOTg4IDEuNTI0LTEuMjQ4LS42ODQtMi40NzItMS4wMi0zLjYxMi0xLjE1Mi0uODY0LS4wOTYtMS42OTItLjA3Mi0yLjQyNC4wMjRsLS4yMDQuMDI0Yy0uNDIuMDM2LTEuNDQuMTkyLTIuNzI0Ljc1Ni0uNDQ0LjIwNC0uNzA4LjM0OC0uNzA4LjM0OHMuOTk2LS45NDggMy4xNTYtMS41NzJsLS4xMi0uMTQ0cy0xLjY0NC0uMDM2LTMuMzcyIDEuMjZjMCAwLTEuNzI4IDMuMTMyLTEuNzI4IDYuOTk2IDAgMCAxLjAwOCAxLjc0IDMuNjYgMS44MjQgMCAwIC40NDQtLjU0LjgwNC0uOTk2LTEuNTI0LS40NTYtMi4xLTEuNDE2LTIuMS0xLjQxNmwuMzM2LjIwNC4wNDguMDM2LjA0Ny4wMjcuMDE0LjAwNi4wNDcuMDI3Yy4zLjE2OC42LjMuODc2LjQwOC40OTIuMTkyIDEuMDguMzg0IDEuNzY0LjUxNi45LjE2OCAxLjk1Ni4yMjggMy4xMDguMDEyLjU2NC0uMDk2IDEuMTQtLjI2NCAxLjc0LS41MTYuNDItLjE1Ni44ODgtLjM4NCAxLjM4LS43MDggMCAwLS42Ljk4NC0yLjE3MiAxLjQyOC4zNi40NTYuNzkyLjk3Mi43OTIuOTcyem0tNS41OC01LjYwNGMtLjY4NCAwLTEuMjI0LjYtMS4yMjQgMS4zMzIgMCAuNzMyLjU1MiAxLjMzMiAxLjIyNCAxLjMzMi42ODQgMCAxLjIyNC0uNiAxLjIyNC0xLjMzMi4wMTItLjczMi0uNTQtMS4zMzItMS4yMjQtMS4zMzJ6bTQuMzggMGMtLjY4NCAwLTEuMjI0LjYtMS4yMjQgMS4zMzIgMCAuNzMyLjU1MiAxLjMzMiAxLjIyNCAxLjMzMi42ODQgMCAxLjIyNC0uNiAxLjIyNC0xLjMzMiAwLS43MzItLjU0LTEuMzMyLTEuMjI0LTEuMzMyeiIvPjwvc3ZnPg==);
+            background-size: 1em 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+        }
+        .github-ctx {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjYgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAyIDMuNDM4IDkuOCA4LjIwNyAxMS4zODcuNTk5LjExMS43OTMtLjI2MS43OTMtLjU3N3YtMi4yMzRjLTMuMzM4LjcyNi00LjAzMy0xLjQxNi00LjAzMy0xLjQxNi0uNTQ2LTEuMzg3LTEuMzMzLTEuNzU2LTEuMzMzLTEuNzU2LTEuMDg5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM5IDEuMjM3IDEuODM5IDEuMjM3IDEuMDcgMS44MzQgMi44MDcgMS4zMDQgMy40OTIuOTk3LjEwNy0uNzc1LjQxOC0xLjMwNS43NjItMS42MDQtMi42NjUtLjMwNS01LjQ2Ny0xLjMzNC01LjQ2Ny01LjkzMSAwLTEuMzExLjQ2OS0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNS0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yMy45NTctLjI2NiAxLjk4My0uMzk5IDMuMDAzLS40MDQgMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2IDQuNzY1LTEuNTg5IDguMTk5LTYuMDg2IDguMTk5LTExLjM4NiAwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg==);
+            background-size: 1em 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+        }
+        .minecraft-ctx {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKdmVyc2lvbj0iMS4xIgp4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCnhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCnZpZXdCb3g9IjAgMCA5OC41OTggMTExLjk5OCI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CnBhdGggeyBzdHJva2U6ICMwMDA7IGZpbGw6ICMwMDA7IH0KQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgeyBwYXRoIHsgc3Ryb2tlOiNmZmY7IGZpbGw6ICNmZmY7IH0gfQo8L3N0eWxlPgo8ZwpzdHlsZT0ic3Ryb2tlLWxpbmVqb2luOnJvdW5kIgp0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzMuNzE5NDEsLTQ2LjgwODA1NykiPgo8cGF0aApzdHlsZT0ic3Ryb2tlLXdpZHRoOjEyO2ZpbGw6bm9uZSIKZD0iTSAzOC43MTk0MSw3Ni44MDc1MjUgViAxMjYuODA4MSBsIDQzLjI5NzE0NCwyNC45OTc2MiA0My4zMDA0MTYsLTI0Ljk5OTUxIFYgNzYuODA3NDU5IEwgODIuMDE2NjAyLDUxLjgwNzk4IFoiIC8+CjxwYXRoCnN0eWxlPSJzdHJva2Utd2lkdGg6MTAiCmQ9Ik0gMzguNzE5NDEsNzYuODA3NTI1IDgyLjAxNjU1NCwxMDEuODA5NzMgMTI1LjMxNjk3LDc2LjgwNzQ1OSA4Mi4wMTY2MDIsNTEuODA3OTggWiIgLz4KPC9nPgo8L3N2Zz4K);
+            background-size: 1em 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+        }
+        .contacts-ctx {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23000000"%3E%3Cpath d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v58q0 59-40.5 100.5T740-280q-35 0-66-15t-52-43q-29 29-65.5 43.5T480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480v58q0 26 17 44t43 18q26 0 43-18t17-44v-58q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93h200v80H480Zm0-280q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/%3E%3C/svg%3E');
+            background-size: 1em 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+        }
+        .section {
+            margin: 1em 0;
+            text-align: center;
+        }
+        code {
+            border-radius: 0.4em;
+            background-color: #ececec;
+            padding: 0.2em 0.4em;
+        }
+    </style>
+</head>
 
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                font-family: sans-serif;
 
-                box-shadow: 0.2em 0.2em 0.4em #00000066;
-            }
 
-            .my-site {
-                background-color: #00cc00;
-            }
+<body><main><article>
+    <div class="main-heading">
+        <h1>Привет! Я KlasterK</h1>
+        <img src="/images/tess.png" width="180" height="180" class="main-tess">
+    </div>
 
-            .youtube-channel {
-                background-color: red;
-            }
+    <div class="section">
+        Ютубер, иногда стримлю, пишу код.
+    </div>
 
-            .discord-server {
-                background-color: #5665f2;
-            }
+    <div class="section">
+        <h2 class="youtube-ctx">YouTube</h2>
+        <a href="https://www.youtube.com/@klasterk">youtube.com/@klasterk</a>
+        <p>На момент написания 137 подписчиков. Видео выходят, когда есть настроение и идеи.</p>
+        <p>Снимаю видео про Майнкрафт. Почти все видео &mdash; гайды, но есть и другие форматы.</p>
+        <p>Но не один Майнкрафт, например, был стрим по Portal.</p>
+    </div>
 
-            .klasterkraft {
-                background-color: chocolate;
-                background-image: url('/images/dirt64.png');
-                text-shadow: 0.05em 0.05em black;
-            }
+    <div class="section">
+        <h2 class="twitch-ctx">Twitch</h2>
+        <a href="https://www.twitch.tv/klasterk">twitch.tv/klasterk</a>
+        <p>Всего 2 фолловера и 1 стрим, но есть больше на Ютубе.</p>
+    </div>
 
-            .kk-discord {
-                background-color: lightsteelblue;
-                background-image: url('/images/clay64.png');
-            }
+    <div class="section">
+        <h2 class="discord-ctx">Discord</h2>
+        <a href="https://discord.gg/crVSKxRRdh">discord.gg/crVSKxRRdh</a>
+        <p>У меня есть дискорд сервер, где я вижу только 2 активных чела. Заходите, оживляйте.</p>
+    </div>
 
-            .github {
-                background-color: #24292f;
-            }
+    <div class="section">
+        <h2 class="github-ctx">Github</h2>
+        <a href="https://github.com/KlasterK">github.com/KlasterK</a>
+        <p>На гитхабе мало репозиториев, но так потому, что я пишу мелочь, которую не имеет смысла выкладывать.</p>
+        <p>Пишу в основном на Python и C++.</p>
+    </div>
 
-            details {
-                color: white;
-                font-family: sans-serif;
-            }
+    <div class="section">
+        <h2 class="minecraft-ctx">Сервер Minecraft</h2>
+        <p>Для стримов я создал сервер на Aternos.</p>
+        <p>На стримах мы выживаем с подписчиками. Но есть и другие режимы, например, сплиф и TNT Run.</p>
+        <p>Адрес:
+            <code class="copiable">klasterkraft.aternos.me:56836</code>
+        </p>
+        <p>Версия: 1.7.2&ndash;последняя</p>
+    </div>
 
-            details summary {
-                user-select: none;
-                cursor: pointer;
-                padding: 0.5em;
-                border-radius: 0.5em;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-                background-color: #00cc66;
-            }
+    <div class="section">
+        <h2 class="contacts-ctx">Контакты</h2>
+        <p>Discord: <code class="copiable">klasterk</code></p>
+    </div>
+</article></main></body>
 
-            details .info {
-                color: black;
-                border-color: #00cc66;
-                background-color: white;
-                padding: 0.5em;
-                border-radius: 0.5em;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-                border-width: 5px;
-                border-style: solid;
-                border-top-width: 0;
-                padding: 1px 1em;
-            }
-        </style>
 
-        <script>
-            function klasterkraft() {
-                navigator.clipboard.writeText('klasterkraft.aternos.me:56836');
-                alert('Адрес: klasterk.github.io:56836\nВерсия: любая от 1.7.10');
-            };
-        </script>
-    </head>
 
-    <body>
-        <main>
-            <article>
-                <div class="his-majesty-klasterk"> <!-- зачем я назвал этот div так? зачем вы это читаете? -->
-                    <img src="/images/tess.png" width="180" height="180" alt="Мой логотип (тессеракт)">
-                    <h1>KlasterK</h1>
-                </div>
+<script type="text/javascript">
+    const copy_icon_uri = 'url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjMDAwMDAwIj48cGF0aCBkPSJNMzYwLTI0MHEtMzMgMC01Ni41LTIzLjVUMjgwLTMyMHYtNDgwcTAtMzMgMjMuNS01Ni41VDM2MC04ODBoMzYwcTMzIDAgNTYuNSAyMy41VDgwMC04MDB2NDgwcTAgMzMtMjMuNSA1Ni41VDcyMC0yNDBIMzYwWm0wLTgwaDM2MHYtNDgwSDM2MHY0ODBaTTIwMC04MHEtMzMgMC01Ni41LTIzLjVUMTIwLTE2MHYtNTYwaDgwdjU2MGg0NDB2ODBIMjAwWm0xNjAtMjQwdi00ODAgNDgwWiIvPjwvc3ZnPg==)';
+    const ok_icon_uri = 'url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23000000"%3E%3Cpath d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/%3E%3C/svg%3E\')';
 
-                <p>
-                    Привет. Многие блогеры делают себе визитки с социальными сетями. Но они для этого используют сторонние
-                    сервисы и WYSIWYG-редакторы. Я же сделал всё на чистом HTML и CSS, на собственном сайте (почти, не хочу тратиться на домен
-                    и хостинг). Но здесь нет анимаций и всяких фентифлюшек.
-                </p>
+    document.querySelectorAll('.copiable').forEach(e => {
+        // applying styles via js because copying wont work without js
+        e.style.cursor = 'pointer';
+        e.style.backgroundImage = copy_icon_uri;
+        e.style.backgroundRepeat = 'no-repeat';
+        e.style.backgroundSize = '1em 1em';
+        e.style.backgroundPosition = 'right';
+        e.style.paddingRight = '1.5em';
+        e.style.display = 'inline-block';
 
-                <div class="buttons">
-                    <a href="/" class="my-site">Главная страница лучшего сайта (моего)</a>
-                    <a href="https://youtube.com/@klasterk" class="youtube-channel">Мой YouTube канал</a>
-                    <a href="https://discord.gg/crVSKxRRdh" class="discord-server">Мой Discord сервер</a>
-                    <a href="javascript:klasterkraft();" class="klasterkraft">Мой Minecraft сервер — KlasterKraft
-                        <script>document.write('(копирует и выводит IP адрес)');</script>
-                        <noscript>(у вас нет JavaScript, поэтому ищите адрес внизу страницы)</noscript>
-                    </a>
-                    <a href="https://discord.gg/ABXCeNUdAV" class="kk-discord">Discord сервер для KlasterKraft</a>
-                    <a href="https://github.com/KlasterK" class="github">Мой профиль в GitHub</a>
-                </div>
+        e.addEventListener('click', () => {
+            navigator.clipboard.writeText(e.innerText);
+            e.style.backgroundImage = ok_icon_uri;
+            setTimeout(() => {
+                e.style.backgroundImage = copy_icon_uri;
+            }, 1000);
+        });
+    });
+    
+    // const yt_channel_id = 'UCl5CnUvi7Arw5nUZ4JBP_-g';
+</script>
 
-                <details>
-                    <summary>Дополнительная информация о Minecraft сервере</summary>
-                    <div class="info">
-                        <p>IP адрес: <code>klasterkraft.aternos.me:56836</code></p>
-                        <p>Версия: любая от 1.7.10</p>
-                        <p>Версия ядра: Paper 1.20.2</p>
-                    </div>
-                </details>
-            </article>
-        </main>
-    </body>
+
+
+
 </html>
